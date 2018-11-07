@@ -23,7 +23,17 @@ a{
   color: white;
 }
 
-form {
-  display: block;
+input, textarea, select, button {
+  text-align: center;
+}
+
+.form-control {
   margin-top: 8px;
+}
+
+button, input, optgroup, select, textarea {
+  margin-top: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }

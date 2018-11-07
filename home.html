@@ -13,8 +13,8 @@
 <body>
 
 <script>
-  //GOOGLE SEARCH
-  //Enter domain of site to search
+  // Google Search Script
+  // Domain root stores a webaddress that can be used to search a particular website  
   var domainroot=""
   function Gsitesearch(curobj){
   curobj.q.value=""+domainroot+" "+curobj.qfront.value
@@ -26,6 +26,7 @@
   <h1>The Center Times</h1> 
 </div>
 
+<!-- This is the start of the nav bar-->
 <nav class="navbar navbar-expand-md navbar-dark nav-fill justify-content-center" style="background-color: black;">
   
     <!-- Toggler/collapsibe Button -->
@@ -35,33 +36,36 @@
   
     <!-- Navbar links -->
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">EMAIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NEWS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">GAMES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">LEARN</a>
-            </li>
-            
-            <li>
-                <form class="search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
-                  <input name="q" type="hidden" />
-                  <input class="form-control" name="qfront" type="search" required class="searchField" placeholder="Search" aria-label="Search">
-                </form>
-            </li>
-        </ul>
+        <form class="search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+          <ul class="nav nav-pills">
+              <!-- Each item is in its own list element-->
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">EMAIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMES</a>
+              </li>
+              
+              <!-- This is the form for the google search-->
+              <li>
+                    <input name="q" type="hidden" />
+                    <input class="form-control" name="qfront" type="search" required class="searchField" placeholder="ENTER TOPIC HERE" aria-label="Search">
+              </li>
+              <li>
+                  <input class="btn btn-success" type="submit" class="search-button" value="SEARCH TOPIC" />
+              </li> 
+          </ul>
+        </form>
     </div> 
   </nav>
-  
+
+<!-- This is the example text, this container stores everything but the-->
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
