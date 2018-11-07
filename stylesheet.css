@@ -1,0 +1,32 @@
+.jumbotron {
+  padding: 10px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+.navbar{
+  margin-bottom: 100px;
+}
+
+.nav > li{
+  margin-left:30px;
+  margin-right:30px;
+  font-size: 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: black;
+  background-color: white ;
+}
+
+a{
+  color: white;
+}
+
+.nav > li > input{
+  margin-top: 8px;
+}
+
+.nav > li > button{
+  margin-top: 8px;
+}
