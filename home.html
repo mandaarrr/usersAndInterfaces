@@ -12,6 +12,15 @@
 </head>
 <body>
 
+<script>
+  //GOOGLE SEARCH
+  //Enter domain of site to search
+  var domainroot=""
+  function Gsitesearch(curobj){
+  curobj.q.value=""+domainroot+" "+curobj.qfront.value
+  }
+</script>
+
 <!-- A Big Newspaper Like Title-->
 <div class="jumbotron text-center">
   <h1>The Center Times</h1> 
@@ -44,10 +53,10 @@
             </li>
             
             <li>
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </li>
-            <li>
-                <button type="button" class="btn btn-outline-light">Search Google</button>
+                <form class="search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+                  <input name="q" type="hidden" />
+                  <input class="form-control" name="qfront" type="search" required class="searchField" placeholder="Search" aria-label="Search">
+                </form>
             </li>
         </ul>
     </div> 
